@@ -41,10 +41,11 @@ def main():
     session = requests.Session()
 
     # Prompt for details
-
-    api_base_url = input("Enter your UniFi Controller URL including port e.g https://unifi.example.com:8443: ")
+    url = input("Enter your UniFi Controller URL including port e.g unifi.example.com:8443: ")
     username = input("Enter your UniFi Controller username: ")
     password = stdiomask.getpass("Enter your UniFi Controller password: ", mask="*")
+
+    api_base_url = "https://"+ url
 
     print("Connecting to UniFi Controller...")
     login(session, api_base_url, username, password)
