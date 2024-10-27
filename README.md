@@ -1,14 +1,12 @@
 # UniFiUserRemover
-A python script that removes users from all sites in the UniFi.
+A Python script that removes users from all sites in the UniFi Controller.
 
-I created this script as I needed a way to remove all users from the Unifi Controller.
+I created this script with ChatGPT as I needed a way to remove all users from the UniFi Controller.
 
-### Requirements
-You will need these modules
+## Installation
+To install the required modules, run:
+`pip install -r requirements.txt`
 
-`requests`\
-`getpass`\
-`stdiomas`
-
-Usage\
+## Usage
+Run the script using the following command:
 `python3 UniFiUserRemover.py`
